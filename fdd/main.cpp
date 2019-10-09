@@ -27,12 +27,12 @@ cout<<"\n\nPlease Enter The Name of The Product ";
 cin>>name;
 cout<<"\nPlease Enter The Price of The Product ";
 cin>>price;
-cout<<"\nPlease Enter The Discount (%) ";
+cout<<"\nPlease Enter The Discount(%) ";
 cin>>dis;
 }
 void show_product()
 {
-cout<<"\nThe Product No. of The Product : "<<pno;
+cout<<"\nThe Product Number of The Product : "<<pno;
 cout<<"\nThe Name of The Product : ";
 puts(name);
 cout<<"\nThe Price of The Product : "<<price;
@@ -111,7 +111,7 @@ void modify_product()
 int no,found=0;
 system("cls");
 cout<<"\n\n\tTo Modify ";
-cout<<"\n\n\tPlease Enter The Product No. of The Product";
+cout<<"\n\n\tPlease Enter The Product Number of The Product";
 cin>>no;
 fp.open("Shop.dat",ios::in|ios::out);
 while(fp.read((char*)&pr,sizeof(product)) && found==0)
@@ -130,7 +130,7 @@ found=1;
 }
 fp.close();
 if(found==0)
-cout<<"\n\n Record Not Found ";
+cout<<"\n\n Error 404 :  Not Found ";
 getch();
 }
 //***************************************************************
